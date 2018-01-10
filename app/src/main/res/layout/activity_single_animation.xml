@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lypop.com.lypopconstraintset.SingleAnimationActivity">
+
+    <!--
+        这个类允许你定义编程一套约束用于constraintlayout。它可以让你创建和保存条件的限制，并将其应用到现有的constraintlayout。
+        constraintsset可以各种方式创建：
+
+            c = new ConstraintSet(); c.connect(....);
+            from a R.layout.* object
+            c.clone(context, R.layout.layout1);
+            from a ConstraintLayout
+            c.clone(clayout);
+    -->
+
+    <ImageView
+        android:id="@+id/iv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/headcenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/share_wechat"
+        app:layout_constraintCircle="@id/iv_center"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="90dp"/>
+
+    <ImageView
+        android:id="@+id/iv_kongjian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/share_kongjian"
+        app:layout_constraintCircle="@id/iv_center"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="90dp"/>
+
+    <ImageView
+        android:id="@+id/iv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/share_qq"
+        app:layout_constraintCircle="@id/iv_center"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="90dp"/>
+
+    <ImageView
+        android:id="@+id/iv_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/share_tw"
+        app:layout_constraintCircle="@id/iv_center"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="90dp"/>
+
+</android.support.constraint.ConstraintLayout>

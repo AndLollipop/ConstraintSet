@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".SingleAnimationActivity"></activity>
-        <activity android:name=".ImageScaleActivity">
+        <activity android:name=".SingleAnimationActivity" />
+        <activity android:name=".ImageScaleActivity" />
+        <activity android:name=".LayoutActivity" />
+        <activity android:name=".AddButtonProblemActivity"></activity>
+        <activity android:name=".Layout02Activity">
 
         </activity>
-        <activity android:name=".LayoutActivity">
+        <activity android:name=".apidemo.TransitionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
